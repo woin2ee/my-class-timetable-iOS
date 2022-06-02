@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E86E78D22848497D00773BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D12848497D00773BF0 /* AppDelegate.swift */; };
 		E86E78D42848497D00773BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D32848497D00773BF0 /* SceneDelegate.swift */; };
-		E86E78D62848497D00773BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D52848497D00773BF0 /* ViewController.swift */; };
+		E86E78D62848497D00773BF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D52848497D00773BF0 /* MainViewController.swift */; };
 		E86E78D92848497D00773BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86E78D72848497D00773BF0 /* Main.storyboard */; };
 		E86E78DB2848497E00773BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86E78DA2848497E00773BF0 /* Assets.xcassets */; };
 		E86E78DE2848497E00773BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		E86E78CE2848497D00773BF0 /* MyClassTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClassTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86E78D12848497D00773BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E86E78D32848497D00773BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E86E78D52848497D00773BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E86E78D52848497D00773BF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E86E78D82848497D00773BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E86E78DA2848497E00773BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E86E78DD2848497E00773BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E826B3E728484C4A00209C85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78D52848497D00773BF0 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E826B3E828484C6500209C85 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78D72848497D00773BF0 /* Main.storyboard */,
+				E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E826B3E928484C8100209C85 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78DA2848497E00773BF0 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E826B3EA28484D8700209C85 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78DF2848497E00773BF0 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E86E78C52848497D00773BF0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +134,10 @@
 			children = (
 				E86E78D12848497D00773BF0 /* AppDelegate.swift */,
 				E86E78D32848497D00773BF0 /* SceneDelegate.swift */,
-				E86E78D52848497D00773BF0 /* ViewController.swift */,
-				E86E78D72848497D00773BF0 /* Main.storyboard */,
-				E86E78DA2848497E00773BF0 /* Assets.xcassets */,
-				E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */,
-				E86E78DF2848497E00773BF0 /* Info.plist */,
+				E826B3E728484C4A00209C85 /* ViewController */,
+				E826B3E828484C6500209C85 /* Storyboard */,
+				E826B3E928484C8100209C85 /* Resource */,
+				E826B3EA28484D8700209C85 /* Config */,
 			);
 			path = MyClassTimetable;
 			sourceTree = "<group>";
@@ -258,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86E78D62848497D00773BF0 /* ViewController.swift in Sources */,
+				E86E78D62848497D00773BF0 /* MainViewController.swift in Sources */,
 				E86E78D22848497D00773BF0 /* AppDelegate.swift in Sources */,
 				E86E78D42848497D00773BF0 /* SceneDelegate.swift in Sources */,
 			);
