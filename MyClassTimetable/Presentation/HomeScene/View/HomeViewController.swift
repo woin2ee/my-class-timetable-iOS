@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  HomeViewController.swift
 //  MyClassTimetable
 //
 //  Created by Jaewon on 2022/06/02.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MainViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var timetableStackView: UIStackView!
     
     

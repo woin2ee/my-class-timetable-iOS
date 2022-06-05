@@ -12,8 +12,8 @@
 		B1BF8E9B68834CB87C8167BD /* Pods_MyClassTimetable_MyClassTimetableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0DCBE05E9BE9BA163611E8 /* Pods_MyClassTimetable_MyClassTimetableUITests.framework */; };
 		E86E78D22848497D00773BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D12848497D00773BF0 /* AppDelegate.swift */; };
 		E86E78D42848497D00773BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D32848497D00773BF0 /* SceneDelegate.swift */; };
-		E86E78D62848497D00773BF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D52848497D00773BF0 /* MainViewController.swift */; };
-		E86E78D92848497D00773BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86E78D72848497D00773BF0 /* Main.storyboard */; };
+		E86E78D62848497D00773BF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78D52848497D00773BF0 /* HomeViewController.swift */; };
+		E86E78D92848497D00773BF0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86E78D72848497D00773BF0 /* Home.storyboard */; };
 		E86E78DB2848497E00773BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86E78DA2848497E00773BF0 /* Assets.xcassets */; };
 		E86E78DE2848497E00773BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */; };
 		E86E78E92848497F00773BF0 /* MyClassTimetableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78E82848497F00773BF0 /* MyClassTimetableTests.swift */; };
@@ -52,11 +52,11 @@
 		E86E78CE2848497D00773BF0 /* MyClassTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClassTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86E78D12848497D00773BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E86E78D32848497D00773BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E86E78D52848497D00773BF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		E86E78D82848497D00773BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86E78D52848497D00773BF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E86E78D82848497D00773BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E86E78DA2848497E00773BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E86E78DD2848497E00773BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E86E78DF2848497E00773BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86E78DF2848497E00773BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyClassTimetable/Application/Info.plist; sourceTree = SOURCE_ROOT; };
 		E86E78E42848497F00773BF0 /* MyClassTimetableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyClassTimetableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86E78E82848497F00773BF0 /* MyClassTimetableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTimetableTests.swift; sourceTree = "<group>"; };
 		E86E78EE2848497F00773BF0 /* MyClassTimetableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyClassTimetableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,36 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E826B3E728484C4A00209C85 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E86E78D52848497D00773BF0 /* MainViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		E826B3E828484C6500209C85 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				E86E78D72848497D00773BF0 /* Main.storyboard */,
-				E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		E826B3E928484C8100209C85 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */,
 				E86E78DA2848497E00773BF0 /* Assets.xcassets */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		E826B3EA28484D8700209C85 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		E826B3EB2848634500209C85 /* Component */ = {
@@ -161,14 +138,9 @@
 		E86E78D02848497D00773BF0 /* MyClassTimetable */ = {
 			isa = PBXGroup;
 			children = (
-				E86E78D12848497D00773BF0 /* AppDelegate.swift */,
-				E86E78D32848497D00773BF0 /* SceneDelegate.swift */,
-				E86E78DF2848497E00773BF0 /* Info.plist */,
-				E826B3E728484C4A00209C85 /* ViewController */,
-				E826B3EB2848634500209C85 /* Component */,
-				E826B3E828484C6500209C85 /* Storyboard */,
+				E87390C1284C938100FF79E3 /* Application */,
+				E87390C2284C940800FF79E3 /* Presentation */,
 				E826B3E928484C8100209C85 /* Resource */,
-				E826B3EA28484D8700209C85 /* Config */,
 			);
 			path = MyClassTimetable;
 			sourceTree = "<group>";
@@ -190,6 +162,42 @@
 			path = MyClassTimetableUITests;
 			sourceTree = "<group>";
 		};
+		E87390C1284C938100FF79E3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78D12848497D00773BF0 /* AppDelegate.swift */,
+				E86E78D32848497D00773BF0 /* SceneDelegate.swift */,
+				E86E78DF2848497E00773BF0 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E87390C2284C940800FF79E3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E87390C3284C945700FF79E3 /* HomeScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E87390C3284C945700FF79E3 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				E87390C4284C946500FF79E3 /* View */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		E87390C4284C946500FF79E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E86E78D72848497D00773BF0 /* Home.storyboard */,
+				E86E78D52848497D00773BF0 /* HomeViewController.swift */,
+				E826B3EB2848634500209C85 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F0CDC143AD94354BFF08E247 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +208,6 @@
 				D3DA8F4608276FB802A46BCE /* Pods-MyClassTimetableTests.debug.xcconfig */,
 				4DA54BA1A351E0D66BAE07BD /* Pods-MyClassTimetableTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,7 +332,7 @@
 			files = (
 				E86E78DE2848497E00773BF0 /* LaunchScreen.storyboard in Resources */,
 				E86E78DB2848497E00773BF0 /* Assets.xcassets in Resources */,
-				E86E78D92848497D00773BF0 /* Main.storyboard in Resources */,
+				E86E78D92848497D00773BF0 /* Home.storyboard in Resources */,
 				E8E603E7284868FB003EEA3B /* TimetableBackgroundElementView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86E78D62848497D00773BF0 /* MainViewController.swift in Sources */,
+				E86E78D62848497D00773BF0 /* HomeViewController.swift in Sources */,
 				E86E78D22848497D00773BF0 /* AppDelegate.swift in Sources */,
 				E86E78D42848497D00773BF0 /* SceneDelegate.swift in Sources */,
 				E8E603EB28486AA8003EEA3B /* TimetableBackgroundElementView.swift in Sources */,
@@ -494,12 +501,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E86E78D72848497D00773BF0 /* Main.storyboard */ = {
+		E86E78D72848497D00773BF0 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E86E78D82848497D00773BF0 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		E86E78DC2848497E00773BF0 /* LaunchScreen.storyboard */ = {
@@ -637,7 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyClassTimetable/Info.plist;
+				INFOPLIST_FILE = MyClassTimetable/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -668,7 +675,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyClassTimetable/Info.plist;
+				INFOPLIST_FILE = MyClassTimetable/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
