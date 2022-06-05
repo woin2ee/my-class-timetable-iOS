@@ -19,6 +19,10 @@
 		E86E78E92848497F00773BF0 /* MyClassTimetableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78E82848497F00773BF0 /* MyClassTimetableTests.swift */; };
 		E86E78F32848497F00773BF0 /* MyClassTimetableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78F22848497F00773BF0 /* MyClassTimetableUITests.swift */; };
 		E86E78F52848497F00773BF0 /* MyClassTimetableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E78F42848497F00773BF0 /* MyClassTimetableUITestsLaunchTests.swift */; };
+		E87390C6284CA62E00FF79E3 /* LectureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87390C5284CA62E00FF79E3 /* LectureView.xib */; };
+		E87390C8284CA6A500FF79E3 /* LectureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87390C7284CA6A500FF79E3 /* LectureView.swift */; };
+		E87390CB284CA76F00FF79E3 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87390CA284CA76F00FF79E3 /* Lecture.swift */; };
+		E87390CF284CAF2E00FF79E3 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87390CE284CAF2E00FF79E3 /* Date+.swift */; };
 		E8E603E7284868FB003EEA3B /* TimetableBackgroundElementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E603E6284868FB003EEA3B /* TimetableBackgroundElementView.xib */; };
 		E8E603EB28486AA8003EEA3B /* TimetableBackgroundElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E603EA28486AA8003EEA3B /* TimetableBackgroundElementView.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,10 @@
 		E86E78EE2848497F00773BF0 /* MyClassTimetableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyClassTimetableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86E78F22848497F00773BF0 /* MyClassTimetableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTimetableUITests.swift; sourceTree = "<group>"; };
 		E86E78F42848497F00773BF0 /* MyClassTimetableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTimetableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E87390C5284CA62E00FF79E3 /* LectureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureView.xib; sourceTree = "<group>"; };
+		E87390C7284CA6A500FF79E3 /* LectureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureView.swift; sourceTree = "<group>"; };
+		E87390CA284CA76F00FF79E3 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		E87390CE284CAF2E00FF79E3 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		E8E603E6284868FB003EEA3B /* TimetableBackgroundElementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimetableBackgroundElementView.xib; sourceTree = "<group>"; };
 		E8E603EA28486AA8003EEA3B /* TimetableBackgroundElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableBackgroundElementView.swift; sourceTree = "<group>"; };
 		FC0DCBE05E9BE9BA163611E8 /* Pods_MyClassTimetable_MyClassTimetableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyClassTimetable_MyClassTimetableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +117,8 @@
 			children = (
 				E8E603E6284868FB003EEA3B /* TimetableBackgroundElementView.xib */,
 				E8E603EA28486AA8003EEA3B /* TimetableBackgroundElementView.swift */,
+				E87390C5284CA62E00FF79E3 /* LectureView.xib */,
+				E87390C7284CA6A500FF79E3 /* LectureView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -140,7 +150,9 @@
 			children = (
 				E87390C1284C938100FF79E3 /* Application */,
 				E87390C2284C940800FF79E3 /* Presentation */,
+				E87390C9284CA76100FF79E3 /* Domain */,
 				E826B3E928484C8100209C85 /* Resource */,
+				E87390CD284CAF1700FF79E3 /* Extension */,
 			);
 			path = MyClassTimetable;
 			sourceTree = "<group>";
@@ -196,6 +208,30 @@
 				E826B3EB2848634500209C85 /* Component */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E87390C9284CA76100FF79E3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E87390CC284CA7B600FF79E3 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E87390CC284CA7B600FF79E3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E87390CA284CA76F00FF79E3 /* Lecture.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E87390CD284CAF1700FF79E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E87390CE284CAF2E00FF79E3 /* Date+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F0CDC143AD94354BFF08E247 /* Pods */ = {
@@ -332,6 +368,7 @@
 			files = (
 				E86E78DE2848497E00773BF0 /* LaunchScreen.storyboard in Resources */,
 				E86E78DB2848497E00773BF0 /* Assets.xcassets in Resources */,
+				E87390C6284CA62E00FF79E3 /* LectureView.xib in Resources */,
 				E86E78D92848497D00773BF0 /* Home.storyboard in Resources */,
 				E8E603E7284868FB003EEA3B /* TimetableBackgroundElementView.xib in Resources */,
 			);
@@ -461,9 +498,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87390CF284CAF2E00FF79E3 /* Date+.swift in Sources */,
+				E87390CB284CA76F00FF79E3 /* Lecture.swift in Sources */,
 				E86E78D62848497D00773BF0 /* HomeViewController.swift in Sources */,
 				E86E78D22848497D00773BF0 /* AppDelegate.swift in Sources */,
 				E86E78D42848497D00773BF0 /* SceneDelegate.swift in Sources */,
+				E87390C8284CA6A500FF79E3 /* LectureView.swift in Sources */,
 				E8E603EB28486AA8003EEA3B /* TimetableBackgroundElementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

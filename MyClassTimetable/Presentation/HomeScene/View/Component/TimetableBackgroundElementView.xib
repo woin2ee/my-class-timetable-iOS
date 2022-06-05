@@ -7,23 +7,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimetableBackgroundElementView" customModule="MyClassTimetable" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimetableBackgroundElementView" customModule="MyClassTimetable" customModuleProvider="target">
+            <connections>
+                <outlet property="endTime" destination="Oie-CP-ucK" id="F5M-Zz-bog"/>
+                <outlet property="startTime" destination="Ipw-Rh-dox" id="Aaw-be-ZjH"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="436" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-Rh-dox">
-                    <rect key="frame" x="5" y="5" width="43" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="5" y="5" width="32" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oie-CP-ucK">
+                    <rect key="frame" x="5" y="23.5" width="32" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLt-lC-ntP">
+                    <rect key="frame" x="17.5" y="15.5" width="7" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemGray5Color"/>
             <constraints>
+                <constraint firstItem="BLt-lC-ntP" firstAttribute="centerX" secondItem="Ipw-Rh-dox" secondAttribute="centerX" id="79I-T4-jlD"/>
                 <constraint firstItem="Ipw-Rh-dox" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="OcO-MT-bPD"/>
                 <constraint firstItem="Ipw-Rh-dox" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="V35-qh-2w8"/>
+                <constraint firstItem="Oie-CP-ucK" firstAttribute="top" secondItem="BLt-lC-ntP" secondAttribute="bottom" constant="-4" id="Ykp-yl-LNH"/>
+                <constraint firstItem="Oie-CP-ucK" firstAttribute="centerX" secondItem="Ipw-Rh-dox" secondAttribute="centerX" id="rp7-M7-tZm"/>
+                <constraint firstItem="BLt-lC-ntP" firstAttribute="top" secondItem="Ipw-Rh-dox" secondAttribute="bottom" constant="-4" id="sws-s2-ENi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="160.86956521739131" y="139.28571428571428"/>

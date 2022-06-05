@@ -8,20 +8,36 @@
 import UIKit
 
 class TimetableBackgroundElementView: UIView {
-    convenience init() {
+    @IBOutlet weak var startTime: UILabel!
+    @IBOutlet weak var endTime: UILabel!
+    
+    let minuteOfHour = 60
+    let breakTime = 10
+    
+    convenience init(time: String) {
         self.init(frame: CGRect())
+        viewInit()
+        setTime(by: time)
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        viewInit()
     }
     
     required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setTime(by time: String) {
+        self.startTime.text = time
         
-        super.init(coder: coder)
-        viewInit()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        let date = formatter.date(from: time)
+        guard let endTime = date?.afterMinute(minuteOfHour - breakTime) else {
+            return self.endTime.text = time
+        }
+        self.endTime.text = formatter.string(from: endTime)
     }
     
     func viewInit() {
