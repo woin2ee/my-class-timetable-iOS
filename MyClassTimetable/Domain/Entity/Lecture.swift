@@ -7,14 +7,6 @@
 
 import Foundation
 
-enum Weekday {
-    case monday
-    case tuesday
-    case wednesday
-    case thursday
-    case friday
-}
-
 struct Lecture {
     var name: String
     var startTime: Int
