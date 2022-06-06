@@ -12,10 +12,11 @@ class LectureView: UIView {
     
     var lecture: Lecture?
     
-    convenience init(startTime: Int, count: Int) {
+    convenience init(lecture: Lecture) {
         self.init(frame: CGRect())
-        self.lecture = Lecture(startTime: startTime, count: count)
+        self.lecture = lecture
         viewInit()
+        makeView()
     }
     
     override init(frame: CGRect) {
@@ -31,5 +32,9 @@ class LectureView: UIView {
         guard let view = Bundle.main.loadNibNamed(name, owner: self)?.first as? UIView else { return }
         view.frame = self.bounds
         addSubview(view)
+    }
+    
+    func makeView() {
+        lectureName.text = lecture?.name
     }
 }
