@@ -48,18 +48,12 @@ class HomeViewController: UIViewController {
         let width = timetableLecture.frame.width / CGFloat(Weekday.count)
         let height = timetableLecture.frame.height / CGFloat(totalLectureTime) * CGFloat(lectureView.lecture?.count ?? 0)
         
-        print(timetableLecture.frame.height)
-        print(height)
-        
         lectureView.snp.makeConstraints {
             $0.width.equalTo(width)
             $0.height.equalTo(height)
             $0.top.equalTo(timetableLecture)
             $0.leading.equalTo(timetableLecture)
         }
-
-        print(lectureView.frame.height)
-        
     }
     
     func setupBackground() {
